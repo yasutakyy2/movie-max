@@ -13,7 +13,7 @@ import os
 
 from optimization_api import MovieOptimizationAPI
 from database_manager import DatabaseManager
-from crawler_api import MovieCrawlerAPI
+  # from crawler_api import MovieCrawlerAPI
 
 app = FastAPI(title="Movie Optimization System", version="1.0.0")
 
@@ -24,7 +24,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # API初期化
 movie_api = MovieOptimizationAPI()
-crawler_api = MovieCrawlerAPI()
+  # crawler_api = MovieCrawlerAPI()
 
 # Pydanticモデル
 class OptimizationRequest(BaseModel):
