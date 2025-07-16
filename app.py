@@ -1,7 +1,3 @@
-"""
-映画最適化システム 簡易版 FastAPI Webアプリケーション
-"""
-
 from fastapi import FastAPI, HTTPException
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, JSONResponse
